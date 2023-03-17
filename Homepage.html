@@ -1,0 +1,71 @@
+<!--Homepage 
+    On the HomePage, show:
+● A search bar where user can enter a search keyword
+● A list of the videos in the videos collection. For each video, display image, title, channel name,
+upload date.
+● Each video must have a link called “View details”. Clicking on this link should navigate the user
+to the Video Details Page
+Search Functionality:
+If the user enters a search keyword into the search bar, the application should:
+● Search for a video that contains the specified keyword in the video title.
+● If matching videos can be found, display them on the home page
+● If videos cannot be found, display an error message.
+● If no keyword is entered, then display all videos in the video collection.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Video Search</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        
+
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"></div>
+          <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h1 class="text-center">Video Search</h1>
+                            <p class="lead">
+                                <strong>Search for videos that contain the keyword you enter.</strong>
+                                <br>
+
+<form class="form-inline" role="form">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+
+    </div>
+    <button class="btn btn-primary" type="submit">Search</button>
+</form>
+
+                            </p>
+                            <p class="lead">
+                                <strong>Video Collection:</strong>
+                                <br>
+                                <a class="btn btn-primary" href="https://www.youtube.com/">YouTube</a>
+                                <a class="btn btn-primary" href="/Video-details">Your</a>
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+                </div>
+            </div>
+        </div>
+    </body>
+ </html>

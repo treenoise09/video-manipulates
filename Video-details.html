@@ -1,0 +1,67 @@
+<!-- Video Details Page
+This page displays details about a specified video. You must display:
+● A video player that plays the specified video. Use the HTML for an embedded Youtube video.
+● Video title, channel, upload date, and number of likes
+● A form that contains a button to add a like to the video.A form for the user to add a comment to
+the current video video
+● A list of any comments associated with the current video
+Form for Adding Comments
+This form enables the user to associate a comment to the currently displayed video. After adding a
+comment, you should show the same details page with the most updated list of comments.
+Form for Adding a Like
+When the user presses the LIKE button, the application must:
+● Increase the number of likes on the video by 1
+● Display the current video details page, but with the most up to date number of likes
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Video</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.easing/1.3.1/jquery.easing.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Video Details</h3>
+                            <button type="button" class="btn btn-default btn-sm" onclick="addComment()">Add Comment</button>
+                            <button type="button" class="btn btn-default btn-sm" onclick="addLike()">Add Like</button>
+                            <button type="button" class="btn btn-default btn-sm" onclick="goToVideo()">Go To Video</button>
+                            <button type="button" class="btn btn-default btn-sm" onclick="goToComments()">Go To Comments</button>
+                            <button type="button" class="btn btn-default btn-sm" onclick="goToLikes()">Go To Likes</button>
+                            <button type="button" class="btn btn-default btn-sm" onclick="goToUploader()">Go To Uploader</button>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Video Details</h3>
+                                            <p class="lead">
+                                                <strong>Title:</strong> {videoTitle}
+                                                <strong>Uploaded:</strong> {uploadDate}
+                                                <strong>Number of Likes:</strong> {numberOfLikes}
+                                                <strong>Number of Comments:</strong> {numberOfComments}
+                                                <strong>Uploader:</strong> {uploader}
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </body>
+
+</html>
